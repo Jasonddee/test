@@ -1,0 +1,32 @@
+--------------------push到github-----------------------------
+1.一開始先cd 到git 資料夾
+2.如是最一開始 先 git init 初始化 (已經有就跳過)
+3.git status 先檢查是否有前日未處理的
+4.如有新的更改要新增  git add .
+5.git commit -m "要備註的說明"   
+
+5-1.有可能會要你先設定名稱 信箱---------------------  
+git config --global user.name "Your Name"        |這2行是設定全域的 如設定玩 
+                                                 |還是跳錯在用下面2行 
+git config --global user.email "you@example.com" |
+                                                 |
+git config user.email "gaga890216@gmail.com"     |這2行是設定當前專案的名稱 跟mail
+git config user.name "Jason"                     |
+--------------------------------------------------
+
+6.git remote >>查看資料目前有的分支  remote-v 會更詳細
+7.新增remote分支  git remote add origin (github上http網址)      >>>origin是自訂名稱 但大部分的人都會這樣用
+8.git branch 查看 通常都是master
+9.git push origin master 將本機資料推到github
+
+--------------------從github載入到本機(如 新同事第一天上班 完全沒檔案)----------------------------
+1.先將位子退回 git  
+2.git clone github上的網址 檔案名稱
+
+--------------------舊同事 隔天上班要抓其他人完成的檔案--------------------------
+1.git pull origin master
+
+
+
+
+
